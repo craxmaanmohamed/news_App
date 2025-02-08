@@ -3,6 +3,12 @@ import 'package:get/get.dart';
 import '../controllers/auth_controller.dart';
 
 class LoginScreen extends StatelessWidget {
+  
+ final AuthController _authController = Get.find();
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+
+  
  
   @override
   Widget build(BuildContext context) {
