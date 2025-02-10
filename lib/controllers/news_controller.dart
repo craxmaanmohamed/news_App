@@ -7,16 +7,15 @@ class NewsController extends GetxController {
   var articles = <Map<String, dynamic>>[].obs; // List of articles
   var selectedCategory = "general".obs; // Default category
   var isLoading = false.obs; // Loading state
-  late TextEditingController searchController;
 
-  // **🔴 Category Cache** (Prevent data loss when switching)
+  late TextEditingController searchController;
   var categoryCache = <String, List<Map<String, dynamic>>>{}.obs;
 
   @override
   void onInit() {
     super.onInit();
     searchController = TextEditingController();
-    fetchArticles(); // **Load the default category**
+    fetchArticles(); 
   }
 
   @override
