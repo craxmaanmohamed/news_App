@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
-// 
+
 class HistoryController extends GetxController {
   var history = <Map>[].obs;
 
